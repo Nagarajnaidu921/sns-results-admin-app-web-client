@@ -1,5 +1,5 @@
 {
-  "name": "sns-results-admin-app-web-client",
+  "name": "sns-results-student-app-web-client",
   "version": "1.0.0",
   "description": "result app (student UI)",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nagarajnaidu921/sns-results-admin-app-web-client.git"
+    "url": "git+https://github.com/Nagarajnaidu921/sns-results-student-app-web-client.git"
   },
   "author": "Nagaraj V",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nagarajnaidu921/sns-results-admin-app-web-client/issues"
+    "url": "https://github.com/Nagarajnaidu921/sns-results-student-app-web-client/issues"
   },
-  "homepage": "https://github.com/Nagarajnaidu921/sns-results-admin-app-web-client#readme"
+  "homepage": "https://github.com/Nagarajnaidu921/sns-results-student-app-web-client#readme"
 }
