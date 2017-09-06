@@ -12,18 +12,18 @@
 			return data;
 		}
 		function login(userData) {
-			console.log(userData);
-			return $http.post(SERVER.host + '/auth/login/', userData)
+			// console.log(userData);
+			return $http.post(SERVER.login, userData)
 			.then(saveTokenIfExist, function (err) {
 				return err;
 			})
 			.then(function(data){
 				if(data && data.token) {
-					console.log('got token and saved');
-					console.log(data)
+					// console.log('got token and saved');
+					// console.log(data)
 					localStorageServ.storeUserData(JSON.stringify(data));
 					// resultServ.getResult('2');
-					console.log(JSON.parse(localStorageServ.getUserData()));
+					// console.log(JSON.parse(localStorageServ.getUserData()));
 					$rootScope.id = data.id;
 					$location.path('/'+ data.id + '/result');
 				}

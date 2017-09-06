@@ -37,9 +37,21 @@
 
 	}]);
 
-	app.constant('SERVER', {
-		host: '//localhost:3001'
-	})
+	 function getAPIURL(API_ENDPOINT, ip) {
+        var currentHostName = location.hostname;
+        var HOST_NAME = (ip || currentHostName || 'localhost');
+        var API_URL = '//' + HOST_NAME + ':3001' + API_ENDPOINT;
+        return API_URL;
+    }
+
+     app.constant('SERVER', {
+        login: getAPIURL('/auth/login/'),
+        result: getAPIURL('/api/student/result/')
+    })
+
+	// app.constant('SERVER', {
+	// 	host: '//localhost:3001'
+	// })
 
 
 	app.config(['$routeProvider', function($routeProvider) {

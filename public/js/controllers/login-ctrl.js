@@ -4,12 +4,12 @@
 	.controller('loginCtrl', ['$scope', 'loginServ', 'tokenServ', loginCtrl]);
 	function loginCtrl($scope, loginServ, tokenServ) {
 		$scope.login = function() {
-			console.log($scope.user);
+			// console.log($scope.user);
 			loginServ.login($scope.user)
 			.then(function(data){
 				if(!data.token) {
 					$.notify(data.message, 'error');
-					console.log(data);
+					// console.log(data);
 				}
 				
 			}, function (err) {

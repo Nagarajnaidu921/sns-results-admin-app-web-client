@@ -12,7 +12,7 @@
 		// 	$scope.isLoggedIn = false;
 		// }
 		$scope.isLoggedIn = false;
-		console.log($scope.isLoggedIn);
+		// console.log($scope.isLoggedIn);
 		function logout() {
 			loginServ.logout();
 		}
